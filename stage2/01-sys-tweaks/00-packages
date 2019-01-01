@@ -25,3 +25,5 @@ policykit-1
 ssh-import-id
 git
 kubeadm
+kubelet
+kubectl
