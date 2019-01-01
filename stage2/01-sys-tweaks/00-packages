@@ -27,3 +27,4 @@ git
 kubeadm
 kubelet
 kubectl
+curl
