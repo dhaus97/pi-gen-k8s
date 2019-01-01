@@ -25,6 +25,8 @@ apt-get install quilt parted realpath qemu-user-static debootstrap zerofree pxz 
 dosfstools bsdtar libcap2-bin grep rsync xz-utils file git curl
 ```
 
+**As of now, the creation of the image has only been tested and verified for a Raspberry Pi Model 3**
+
 ## Usage and configuration
 ----------
 
@@ -45,3 +47,19 @@ The following configurations can be set:
 | FIRST_USER_PASS | Password of the user which will be created besides the root account | raspberry | No **(still recommended)** |
 | ENABLE_SSH | By setting the value to 1, enable the ssh daemon for a headless start | 0 | No **(still recommended)** |
 | HOSTNAME | The hostname of the associated device (can be changed later on as well) | raspi-k8s | No |
+
+## Additional comments and hints
+----------
+
+Since this image comes with Docker and Kubernetes resources preinstalled and configured, it is likely that it will be used in a Kubernetes background. 
+
+The following articles / guides / hints can be split apart into two scenarios:
+1. Build a Kubernetes Cluster with only Raspberry Pi's
+2. Use Raspberry Pi's as worker nodes in a Kubernetes Cluster
+
+The following articles / guides can be useful for case 1:
+
+*Hints*:
+*1. Set a static IP address for the master node (Currently, this is not supported from Pi-Gen but will be added later on)*
+
+The following articles / guides can be useful for case 2:
