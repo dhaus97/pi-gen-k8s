@@ -55,11 +55,11 @@ EOF
 
 rm -f "${ROOTFS_DIR}/etc/ssh/"ssh_host_*_key*
 
-on_chroot <<EOF
-dphys-swapfile swapoff
-dphys-swapfile uninstall
-update-rc.d dphys-swapfile remove
-EOF
+#on_chroot <<EOF
+#dphys-swapfile swapoff
+#dphys-swapfile uninstall
+#update-rc.d dphys-swapfile remove
+#EOF
 
 on_chroot sh -e - <<EOF
 curl -sSL https://get.docker.com/ | sh
