@@ -16,7 +16,7 @@ on_chroot apt-key add - < files/kubernetes.gpg.key
 on_chroot << EOF
 apt-get update
 apt-get dist-upgrade -y
-apt-get install apt-transport-https
+apt-get install apt-transport-https -y
 EOF
 on_chroot << EOF
 sed -i -e 's/#//g' /etc/apt/sources.list
