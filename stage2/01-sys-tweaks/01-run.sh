@@ -62,6 +62,10 @@ update-rc.d dphys-swapfile remove
 EOF
 
 on_chroot <<EOF
+apt-get install curl
+EOF
+
+on_chroot <<EOF
 curl -sSL https://get.docker.com/ | sh
 usermod -aG docker pi
 EOF
