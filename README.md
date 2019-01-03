@@ -40,6 +40,7 @@ Additional configuration, such as first username and password, enabling ssh etc.
 This is a basic example config file, feel free to edit it as you wish.
 
 The following configurations can be set:
+
 | Name | Description | Default | Required |
 | - | - | - | - |
 | IMG_NAME | Name of the output image and the distribution itself | None | Yes |
