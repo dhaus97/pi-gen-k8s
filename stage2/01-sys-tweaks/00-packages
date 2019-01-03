@@ -1,12 +1,11 @@
 ssh less fbset sudo psmisc strace ed ncdu crda
-console-setup keyboard-configuration debconf-utils parted unzip
-build-essential manpages-dev python bash-completion gdb pkg-config
+console-setup keyboard-configuration debconf-utils
+python bash-completion gdb pkg-config
 python-rpi.gpio v4l-utils
 avahi-daemon
 hardlink ca-certificates curl
-fake-hwclock nfs-common usbutils
+nfs-common usbutils
 libraspberrypi-dev libraspberrypi-doc libfreetype6-dev
-dosfstools
 dphys-swapfile
 raspberrypi-sys-mods
 pi-bluetooth
@@ -16,12 +15,8 @@ apt-transport-https
 libpam-chksshpwd
 rpi-update
 libmtp-runtime
-rsync
-htop
-man-db
 policykit-1
 ssh-import-id
-git
 kubeadm
 kubelet
 kubectl
