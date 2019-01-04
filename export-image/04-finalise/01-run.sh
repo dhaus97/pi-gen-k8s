@@ -3,10 +3,6 @@
 IMG_FILE="${STAGE_WORK_DIR}/${IMG_FILENAME}.img"
 INFO_FILE="${STAGE_WORK_DIR}/${IMG_FILENAME}.info"
 
-on_chroot << EOF
-/etc/init.d/fake-hwclock stop
-hardlink -t /usr/share/doc
-EOF
 
 if [ -d "${ROOTFS_DIR}/home/pi/.config" ]; then
 	chmod 700 "${ROOTFS_DIR}/home/pi/.config"
