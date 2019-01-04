@@ -48,6 +48,7 @@ The following configurations can be set:
 | FIRST_USER_PASS | Password of the user which will be created besides the root account | raspberry | No **(still recommended)** |
 | ENABLE_SSH | By setting the value to 1, enable the ssh daemon for a headless start | 0 | No **(still recommended)** |
 | HOSTNAME | The hostname of the associated device (can be changed later on as well) | raspi-k8s | No |
+| TARGET_DEVICE | The target device (Currently supported: Raspberry Pi 3 and Raspberry Pi Zero) | RPi3 | Yes |
 | WPA_ESSID | The name of the WLAN access point to connect to | None | No |
 | WPA_PASSWORD | The password for the previously specified WLAN access point | None | No |
 | WPA_COUNTRY | The country of the WLAN access point (needed for Raspi configuration) | None | No |
