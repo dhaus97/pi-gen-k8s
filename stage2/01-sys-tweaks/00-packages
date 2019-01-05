@@ -1,21 +1,15 @@
-ssh less fbset sudo psmisc strace ed ncdu crda
-console-setup keyboard-configuration debconf-utils parted unzip
-build-essential manpages-dev python bash-completion gdb pkg-config
-python bash-completion gdb pkg-config
-python-rpi.gpio v4l-utils
+ssh less sudo ncdu crda
+console-setup keyboard-configuration debconf-utils
+python bash-completion
+python-rpi.gpio
 avahi-daemon
 hardlink ca-certificates curl
-nfs-common usbutils
+usbutils
 libraspberrypi-dev libraspberrypi-doc libfreetype6-dev
 dphys-swapfile
 raspberrypi-sys-mods
-pi-bluetooth
-apt-listchanges
-usb-modeswitch
-apt-transport-https
 libpam-chksshpwd
 rpi-update
-libmtp-runtime
 policykit-1
 ssh-import-id
 kubeadm
