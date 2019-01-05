@@ -1,7 +1,6 @@
 ssh less sudo ncdu crda
 console-setup keyboard-configuration debconf-utils
-python bash-completion
-python-rpi.gpio
+python bash-completion python-rpi.gpio
 hardlink ca-certificates curl
 usbutils
 libraspberrypi-dev libraspberrypi-doc libfreetype6-dev
@@ -11,6 +10,4 @@ libpam-chksshpwd
 rpi-update
 policykit-1
 ssh-import-id
-kubeadm
-kubelet
-kubectl
+kubeadm kubelet kubectl
