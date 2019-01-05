@@ -62,12 +62,10 @@ update-rc.d dphys-swapfile remove
 EOF
 
 on_chroot <<EOF
-curl -sSL https://get.docker.com/ | sh
-usermod -aG docker pi
 if [ "${TARGET_DEVICE}" == "RPI0" ]; then
-	apt-get purge docker-ce
 	apt-get install docker-ce=18.06.1~ce~3-0~raspbian
-	apt-get autoremove
-	usermod -aG docker pi
+else
+	apt-get install docker-ce
 fi
+usermod -aG docker "${FIRST_USER_NAME}"
 EOF
