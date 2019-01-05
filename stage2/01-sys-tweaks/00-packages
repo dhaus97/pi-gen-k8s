@@ -2,7 +2,6 @@ ssh less sudo ncdu crda
 console-setup keyboard-configuration debconf-utils
 python bash-completion
 python-rpi.gpio
-avahi-daemon
 hardlink ca-certificates curl
 usbutils
 libraspberrypi-dev libraspberrypi-doc libfreetype6-dev
