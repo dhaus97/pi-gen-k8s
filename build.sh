@@ -160,6 +160,7 @@ export WPA_ESSID
 export WPA_PASSWORD
 export WPA_COUNTRY
 export ENABLE_SSH="${ENABLE_SSH:-0}"
+export TARGET_DEVICE="${TARGET_DEVICE:-RPI3}"
 
 export BASE_DIR
 
