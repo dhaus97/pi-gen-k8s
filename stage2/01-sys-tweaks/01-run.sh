@@ -63,9 +63,10 @@ EOF
 
 on_chroot <<EOF
 if [ "${TARGET_DEVICE}" == "RPI0" ]; then
-	apt-get install docker-ce=18.06.1~ce~3-0~raspbian
+	apt-get install docker-ce=18.06.1~ce~3-0~raspbian -y
+	apt-mark hold docker-ce
 else
-	apt-get install docker-ce
+	apt-get install docker-ce -y
 fi
 usermod -aG docker "${FIRST_USER_NAME}"
 EOF
