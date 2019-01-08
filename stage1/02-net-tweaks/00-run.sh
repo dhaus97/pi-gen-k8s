@@ -7,4 +7,7 @@ ln -sf /dev/null "${ROOTFS_DIR}/etc/systemd/network/99-default.link"
 
 on_chroot <<EOF
 sed -i -e 's/raspi-k8s/${HOSTNAME}/g' /etc/hostname
+
+on_chroot <<EOF
+sed -i -e 's/raspi-k8s/${HOSTNAME}/g' /etc/hosts
 EOF
